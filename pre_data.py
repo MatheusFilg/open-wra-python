@@ -53,7 +53,7 @@ def create_admin_users(admin, op, analyst):
     adm = User()
     if not user_datastore.find_user(username="devssauro"):
         adm.email = "cunha.ladm@outlook.com"
-        adm.password = hash_password("Pcwsdg?K0")
+        adm.password = hash_password("123546")
         adm.username = "devssauro"
         adm.fs_uniquifier = uuid4().hex
         adm.confirmed_at = datetime.now()
@@ -64,7 +64,7 @@ def create_admin_users(admin, op, analyst):
     yumi = User()
     if not user_datastore.find_user(username="yumilina"):
         yumi.email = "yumilia@gmail.com"
-        yumi.password = hash_password("morimoto")
+        yumi.password = hash_password("123456")
         yumi.username = "yumilina"
         yumi.fs_uniquifier = uuid4().hex
         yumi.confirmed_at = datetime.now()
